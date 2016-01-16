@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #FFF;
+}
+
+@font-face {
+    font-family: KelsonSans-LightRu;
+    src: local("KelsonSans-LightRu"),
+         url(KelsonSans-LightRu.otf); 
+     }
+@font-face {
+    font-family: Futura-Normal;
+    src: local("Futura-Normal"),
+         url(futura-normal.ttf);
+     }
+.clock{
+	width: 55px;
+	height: 43px;
+	background-color:#fff;
+	margin: 19px auto;
+}
+.circle {
+  display: block;
+  background: black;
+  border-radius: 100%;
+  height: 41px;
+  width: 48px;
+  margin: 0;
+  background: radial-gradient(circle at 25px 25px, #5cabff, #000);
+}
+
+.myScreen{
+	width: 500px;
+	height: 280px;
+	background-color:#F6E5E2;
+	text-align: center;
+	margin: 0 auto;
+	border:1px solid #C7C4C4;
+	border-radius: 15px;
+	position: relative;
+	box-shadow: 2px 2px 15px #C7C4C4;
+}
+.myScreen:before{
+	content: '';
+	position: absolute;
+	background-color:#F6E5E2;
+	width:25px;
+	height: 25px;
+	display: block;
+	border:1px solid #C7C4C4;	
+	transform: rotate(45deg);
+	z-index: -1;
+	top: -14px;
+	left: 235px;
+	box-shadow: 2px 2px 15px #C7C4C4;
+}
+.myScreen:after{
+	content: '';
+	position: absolute;
+	background-color:#F6E5E2;
+	width:23px;
+	height: 23px;
+	display: block;		
+	transform: rotate(45deg);	
+	top: -12px;
+	left: 236px;
+}	
+.triangle-plus {
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-bottom: 15px solid #777;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	position: absolute;
+	right: 60px;
+	top: 180px;
+}
+
+.triangle-minus{
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-top: 15px solid #777;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	position: absolute;
+	right: 60px;
+	bottom: 30px;
+}
+
+.relax{
+	position: absolute;
+	left: 60px;
+}
+#start{
+	background: #F21818;
+	opacity: .8;
+	width: 70px;
+	height: 70px;
+	border: 2px solid #F21818;
+	box-shadow: 0 2px 2px #434343,
+	inset 0 2px 10px rgba(255,255,255,.4);
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	radial-gradient:;
+	bottom: 30px;
+	left: 208px;
+	color:#fff;
+
+}
+#start:hover{
+	opacity: 1;
+}
+#start p{
+	text-transform: uppercase;
+	line-height: 70px;
+}
+#go{
+	color:#fff;
+}
+.myScreen h1{
+	font-family: KelsonSans-LightRu;
+	line-height: 230px;
+	font-size: 100px;
+	color: #434343;
+}
+.myScreen p{
+	font-family: Futura-Normal;
+	font-size: 25px;
+	color: #777777;
+}
+#work{	
+	position: absolute;
+	bottom: 51px;
+	right: 31px;
+}
+#relax{
+	position: absolute;
+	bottom: 51px;
+	left: 38px;
+}

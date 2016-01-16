@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pomodoro clock</title>
+	<link rel="stylesheet" type="text/css" href="pom.css"> 
+</head>
+<body>	
+	<div class="clock">
+		<figure class="circle"></figure>
+	</div>
+
+	<div class="myScreen">
+				
+			<h1 id = "mainCounter">00:00</h1>			
+			<p id="work"><span id = "w">15</span> min</p>
+			<p id = "relax"><span id = "r">5</span> min</p>
+
+			<div id ="plus" class="triangle-plus work"></div>
+			<div id ="minus" class="triangle-minus work"></div>
+			<div id ="plus1" class="triangle-plus relax"></div>
+			<div id ="minus1" class="triangle-minus relax"></div>
+			
+			<div id = "start">
+				<p id = "go">go!</p>
+			</div>
+	</div>	
+	
+	<script src = "pomodoro.js"></script>
+</body>
+</html>
