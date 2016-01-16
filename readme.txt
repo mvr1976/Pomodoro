@@ -1,0 +1,1 @@
+This file contains some info useless by itself but of great importance for my git training 
